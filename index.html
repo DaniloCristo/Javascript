@@ -3,14 +3,20 @@
 	<head>
 		<meta charset="utf-8" />	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-witdh,initial-scale=1"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 
 		<title>Sorteio de números</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
 		<style type="text/css">
 			body{
-				font-family:"Times New Roman", Times, serif;
+				font-family:Tahoma, Geneva, sans-serif;
 			}
 			.navbar-cor{
 				background:#00FF7F;
@@ -21,12 +27,25 @@
 	<body>
 		
 		<header id="cabecalho">
-			<nav class="navbar navbar-default navbar-fixed-top navbar-cor">
+			<nav class="navbar navbar-default navbar-cor">
 				<div class="container">
 					<h2>Sorteio de numeros</h2>
 				</div>
 			</nav>
 		</header>
+
+		<section id="escolha">
+			<div class="container">
+				<form id="escolha_numeros">
+					<label>Primeiro número: <input type="number" class="form-control" id="n1"></label> 
+					<label>Segundo número <input type="number" id="n2" class="form-control"></label>
+					<br />
+					<button type="button" class="btn btn-success" id="btn_click">Sortear</button>
+					<br />
+					<label>Resultado: <input  id="resultado" readonly type="number" class="form-control" /></label>
+				</form>
+			</div>
+		</section>
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
