@@ -12,7 +12,7 @@ function binary(array, target)
 		if(array[chute]==target)
 		{
 			//retorna acertou caso seja verdade
-			return "Acertou";
+			return "Encontrado";
 		}
 		//verificar se o chute foi maior que o target
 		else if(array[chute]>target)
