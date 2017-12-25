@@ -12,7 +12,7 @@ $(document).ready(function(){
 			let freq = [];
 			//console.log(array)
 			
-			//povoando uma nova array com os números sem suas repetições, que ficaram na coluna "idade"
+			//povoando uma nova array com os números sem suas repetições, que ficarão na coluna "idade"
 			for(let i = 0; i<array.length; i++) {
 
 				if(newArray.indexOf(array[i]) == -1) {
@@ -21,6 +21,7 @@ $(document).ready(function(){
 				
 			}
 
+			//povoando a array frequencia com a quantida de vezes que uma idade repete
 			for(let i = 0; i<newArray.length; i++) {
 				let temp = 0;
 				for(let j = 0; j<array.length; j++){
@@ -32,6 +33,7 @@ $(document).ready(function(){
 			}
 			tabela += "<tbody>";
 			
+			//povoando a tabela com os dados
 			for(let i = 0; i<newArray.length;i++) {
 				//colocando as idades
 				tabela += "<tr><td>"+newArray[i]+"</td><td>"+freq[i]+"</td></tr>";
@@ -43,6 +45,7 @@ $(document).ready(function(){
 			tabela += "</tbody>";
 			tabela +="</table>";
 
+			//enviando a tabela para o index
 			$("#tabela").html(tabela);
 
 			console.log(newArray)
